@@ -12,6 +12,7 @@ const Shuffle = () => import("@/pages/algorithm/Shuffle")
 const BubbleSort = () => import("@/pages/algorithm/BubbleSort")
 const QuickSort = () => import("@/pages/algorithm/QuickSort")
 const ClearFloat = () => import("@/pages/practices/ClearFloat")
+const IviewPractice = () => import("@/pages/practices/IviewPractice")
 
 // article
 const Article = () => import("@/pages/article/Article")
@@ -23,6 +24,7 @@ const ArticleDetail = () => import("@/pages/article/Detail")
 const User = () => import("@/pages/user/User")
 const MyArticle = () => import("@/pages/user/MyArticle")
 const UserInfo = () => import("@/pages/user/UserInfo")
+
 
 export default {
   Home,
@@ -45,5 +47,6 @@ export default {
   ArticleDetail,
   User,
   MyArticle,
-  UserInfo
+  UserInfo,
+  IviewPractice
 }

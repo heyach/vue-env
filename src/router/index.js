@@ -76,6 +76,7 @@ let router = new Router({
     { path: '/shuffle', component: Components.Shuffle, meta: { title: 'shuffle' } },
     { path: '/bubblesort', component: Components.BubbleSort, meta: { title: 'bubblesort' } },
     { path: '/quicksort', component: Components.QuickSort, meta: { title: 'quicksort' } },
+    { path: '/iviewpractice', component: Components.IviewPractice, meta: { title: 'iview' } },
     { path: '/login', component: Components.Login, meta: { title: 'login' } },
     { path: '/404', component: Components.Error404, meta: { title: '404' } },
     { path: '*', redirect: '/404' }, // 未匹配到的路由地址

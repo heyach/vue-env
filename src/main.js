@@ -3,6 +3,10 @@ import router from './router/guard'
 import store from './store' 
 import App from './App'
 
+import iView from 'iview';
+import 'iview/dist/styles/iview.css';
+Vue.use(iView);
+
 import axios from 'axios'
 Vue.prototype.$axios = axios
 // axios.defaults.baseURL = '/api'
