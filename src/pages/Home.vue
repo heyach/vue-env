@@ -31,7 +31,6 @@
         <div class="fa" @click.self="fa">
           <div class="son" @click="son"></div>
         </div>
-        <div id="wang-editer"></div>
       </div>
     </div>
   </div>
@@ -41,7 +40,6 @@
 import { mapActions, mapState, mapGetters } from "vuex";
 import { Button, Menu, Submenu, MenuItemGroup, MenuItem } from "element-ui";
 import Header from "../components/Header"
-import E from "wangeditor";
 export default {
   name: "Home",
   components: {
@@ -70,36 +68,6 @@ export default {
     that.getMenus().then(res => {
       that.menuList = res.data;
     });
-    that.editor = new E("#wang-editer");
-    // 图片上传后台接口
-    that.editor.config.uploadImgServer =
-      "http://127.0.0.1:5000/upload/uploadImage";
-    that.editor.config.uploadFileName = "file";
-    // 重载alert消息提示
-    that.editor.config.customAlert = (s, t) => {
-      console.log(s, t);
-    };
-    // 精简菜单栏
-    that.editor.config.menus = [
-      "head", // 标题
-      "bold", // 粗体
-      "fontSize", // 字号
-      "italic", // 斜体
-      "underline", // 下划线
-      "strikeThrough", // 删除线
-      "foreColor", // 文字颜色
-      "backColor", // 背景颜色
-      "link", // 插入链接
-      "list", // 列表
-      "justify", // 对齐方式
-      "quote", // 引用
-      "emoticon", // 表情
-      "image", // 插入图片
-      "table", // 表格
-      "code", // 插入代码
-      "undo", // 撤销
-    ];
-    that.editor.create();
   },
   methods: {
     ...mapActions("Home", ["addCount"]),
@@ -120,7 +88,6 @@ export default {
       console.log(1);
     },
     son() {
-      console.log(this.editor.txt.html());
     }
   }
 };

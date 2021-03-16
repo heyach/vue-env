@@ -13,7 +13,7 @@ module.exports = merge(webpackConfig, {
     filename: 'js/[name].[hash:8].js'
   },
   devServer: {
-    port: 8080,
+    port: 8888,
     proxy: {
       '/': {
         target: 'http://127.0.0.1:5000',
