@@ -44,7 +44,7 @@
 import NumberBox from "@/components/NumberBox";
 export default {
   components: {
-    "number-box": NumberBox
+    "number-box": NumberBox,
   },
   data() {
     return {
