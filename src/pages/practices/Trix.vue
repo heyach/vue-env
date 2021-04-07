@@ -68,16 +68,38 @@ export default {
     },
     mounted() {
         Trix.config.textAttributes.red = {
+            tagName: "red", //一定要配置，否则返显的时候会被自动过滤掉标签
             style: {
                 color: "red",
             },
             inheritable: true,
         };
+        // 通过重写pickFiles调整上传过程
+        // Trix.config.input.pickFiles = function(t) {
+        //     var n;
+        //     var e = Trix
+        //     return n = e.makeElement("input", {
+        //         type: "file",
+        //         multiple: !0,
+        //         hidden: !0,
+        //         //accept: "image/*",
+        //         id: this.fileInputId
+        //     }),
+        //     n.addEventListener("change", function() {
+        //         return t(n.files),
+        //         e.removeNode(n)
+        //     }),
+        //     e.removeNode(document.getElementById(this.fileInputId)),
+        //     document.body.appendChild(n),
+        //     n.click()
+        // }
         this.$refs.trix.addEventListener("trix-initialize", function(event) {
             event.target.toolbarElement
                 .querySelector(".trix-button-group--text-tools")
                 .insertAdjacentHTML("beforeend", '<button class="btn-red" data-trix-attribute="red">A<span></span></button>');
         });
+
+        this.$refs.trix.innerHTML = "<div>5555<red style='color: red;'>22222222sasa</red>";
     },
     methods: {
         getEditorContent() {

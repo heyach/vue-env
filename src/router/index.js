@@ -10,7 +10,7 @@ let router = new Router({
   // base: '/hhh/',
   routes: [
     // 默认首页
-    { path: '/', redirect: '/home' }, 
+    { path: '/', redirect: '/todolist' }, 
     // 首页-嵌套路由
     {
       path: '/home', component: Components.Home,
