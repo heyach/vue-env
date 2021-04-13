@@ -14,6 +14,7 @@ const QuickSort = () => import("@/pages/algorithm/QuickSort")
 const ClearFloat = () => import("@/pages/practices/ClearFloat")
 const IviewPractice = () => import("@/pages/practices/IviewPractice")
 const Trix = () => import("@/pages/practices/Trix")
+const Export = () => import("@/pages/practices/Export")
 
 // article
 const Article = () => import("@/pages/article/Article")
@@ -50,5 +51,6 @@ export default {
   MyArticle,
   UserInfo,
   IviewPractice,
-  Trix
+  Trix,
+  Export
 }
