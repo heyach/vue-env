@@ -15,6 +15,8 @@ const ClearFloat = () => import("@/pages/practices/ClearFloat")
 const IviewPractice = () => import("@/pages/practices/IviewPractice")
 const Trix = () => import("@/pages/practices/Trix")
 const Export = () => import("@/pages/practices/Export")
+const ThreeDemo = () => import("@/pages/practices/ThreeDemo")
+const ThreeDemo2 = () => import("@/pages/practices/ThreeDemo2")
 
 // article
 const Article = () => import("@/pages/article/Article")
@@ -52,5 +54,7 @@ export default {
   UserInfo,
   IviewPractice,
   Trix,
+  ThreeDemo,
+  ThreeDemo2,
   Export
 }

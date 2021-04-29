@@ -2,6 +2,11 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Components from './components'
 
+const originalPush = Router.prototype.push
+Router.prototype.push = function push(location) {
+  return originalPush.call(this, location).catch((err) => err)
+}
+
 Vue.use(Router)
 
 let router = new Router({
@@ -10,7 +15,7 @@ let router = new Router({
   // base: '/hhh/',
   routes: [
     // 默认首页
-    { path: '/', redirect: '/todolist' }, 
+    { path: '/', redirect: '/home' }, 
     // 首页-嵌套路由
     {
       path: '/home', component: Components.Home,
@@ -77,6 +82,8 @@ let router = new Router({
     { path: '/bubblesort', component: Components.BubbleSort, meta: { title: 'bubblesort' } },
     { path: '/quicksort', component: Components.QuickSort, meta: { title: 'quicksort' } },
     { path: '/iviewpractice', component: Components.IviewPractice, meta: { title: 'iview' } },
+    { path: '/threedemo', component: Components.ThreeDemo, meta: { title: 'threedemo' } },
+    { path: '/threedemo2', component: Components.ThreeDemo2, meta: { title: 'threedemo2' } },
     { path: '/trix', component: Components.Trix, meta: { title: 'trix' } },
     { path: '/export', component: Components.Export, meta: { title: 'export' } },
     { path: '/login', component: Components.Login, meta: { title: 'login' } },

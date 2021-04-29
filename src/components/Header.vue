@@ -51,6 +51,7 @@
 <script>
 import { Menu, Submenu, MenuItemGroup, MenuItem } from "element-ui";
 import { mapActions, mapState, mapGetters } from "vuex";
+import m from "../mock/menu"
 export default {
   components: {
     "el-menu": Menu,
@@ -60,7 +61,7 @@ export default {
   },
   data() {
     return {
-      menuList: [],
+      menuList: m,
       activeIndex: "0",
       showUserMenus: false,
       userMenus: []
@@ -76,9 +77,6 @@ export default {
   },
   mounted() {
     let that = this;
-    that.getMenus().then(res => {
-      that.menuList = res.data;
-    });
     that.userMenus = [{
       name: "写文章",
       route: "/article/release"
