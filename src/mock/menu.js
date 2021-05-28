@@ -78,6 +78,12 @@ const m = [
                 route: "/threedemo2",
                 disabled: false,
             },
+            {
+                index: "20",
+                name: "iviewpractice",
+                route: "/iviewpractice",
+                disabled: false,
+            },
         ],
     },
     {

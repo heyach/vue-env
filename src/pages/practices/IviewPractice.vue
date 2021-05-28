@@ -62,14 +62,14 @@
         </div>
         <div class="block-item">
             <div class="intro">
-                <p>tree的常见使用</p>
+                <p @click="setTreeNodeNotChecked">tree的常见使用</p>
                 <p>分级嵌套结构数据</p>
                 <p>多选功能show-checkbox</p>
                 <p>render节点处理，比如编辑名称，删除等操作</p>
                 <p>如果数据为动态数据，废话，一般都是，有render的需求要先处理，比如每一项都添加edit和delete操作</p>
             </div>
             <div class="com-item">
-                <Tree :data="treeData1" show-checkbox></Tree>
+                <Tree ref="ttree" :data="treeData1" show-checkbox></Tree>
             </div>
         </div>
     </div>
@@ -231,12 +231,14 @@ export default {
                         {
                             title: "分类 1-2",
                             expand: true,
+                            checked: true,
                             children: [
                                 {
                                     title: "分类 1-2-1",
+                                    checked: true
                                 },
                                 {
-                                    title: "分类 1-2-1",
+                                    title: "分类 1-2-2",
                                 },
                             ],
                         },
@@ -266,7 +268,7 @@ export default {
                                     title: "分类 2-2-1",
                                 },
                                 {
-                                    title: "分类 2-2-1",
+                                    title: "分类 2-2-2",
                                 },
                             ],
                         },
@@ -396,6 +398,11 @@ export default {
         });
     },
     methods: {
+        setTreeNodeNotChecked(){
+            var tar = this.treeData1[0].children[1].children[1];
+            this.$set(tar, "checked", false)
+            console.log(this.$refs.ttree.getCheckedNodes(), this.treeData1)
+        },
         clearCustomContent() {
             this.formData.customContent = "";
         },

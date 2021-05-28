@@ -17,6 +17,7 @@ const Trix = () => import("@/pages/practices/Trix")
 const Export = () => import("@/pages/practices/Export")
 const ThreeDemo = () => import("@/pages/practices/ThreeDemo")
 const ThreeDemo2 = () => import("@/pages/practices/ThreeDemo2")
+const DragElm = () => import("@/pages/practices/DragElm")
 
 // article
 const Article = () => import("@/pages/article/Article")
@@ -56,5 +57,6 @@ export default {
   Trix,
   ThreeDemo,
   ThreeDemo2,
-  Export
+  Export,
+  DragElm
 }

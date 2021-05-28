@@ -7,6 +7,8 @@ import iView from 'iview';
 import 'iview/dist/styles/iview.css';
 Vue.use(iView);
 
+import './directives/drag';
+
 import axios from 'axios'
 Vue.prototype.$axios = axios
 // axios.defaults.baseURL = '/api'
