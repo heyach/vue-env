@@ -9,6 +9,7 @@
         @drop="drop" @dragover="dragOver"
     >
         1111111
+        <component :is="myComponent"></component>
     </div>
 </template>
 <script>
@@ -26,9 +27,17 @@ export default {
         return {
             selected: false,
             drag: false,
+            myComponent: ""
         };
     },
+    created(){
+      this.getComponentByName("d2")
+    },
     methods: {
+      getComponentByName(name){
+          var myComponent =() => import(`./${name}.vue`);
+          this.myComponent = myComponent;
+      },
         dragOver(e) {
             e.preventDefault();
         },
