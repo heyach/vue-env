@@ -2,14 +2,17 @@
     <div
         :class="{ d1: true, selected: selected }"
         :style="styles"
+        ref="container"
         @mousedown="mouseDown"
         @mousemove="mouseMove"
         @mouseup="mouseUp"
+        @drop="drop" @dragover="dragOver"
     >
         1111111
     </div>
 </template>
 <script>
+// 作为容器也要接受drop事件，但是父容器上也会触发drop，
 export default {
     props: {
         styles: {
@@ -26,6 +29,22 @@ export default {
         };
     },
     methods: {
+        dragOver(e) {
+            e.preventDefault();
+        },
+        drop(e) {
+            e.preventDefault();
+            var data = e.dataTransfer.getData("ID");
+            var a = document.createElement("div")
+            a.innerHTML = "data" + data
+            this.$refs.container.appendChild(a)
+            this.$emit("stopCreate")
+        },
+        createComponent(name, e) {
+            var a = document.createElement("div")
+            a.innerHTML = "data" + name
+            this.$refs.container.appendChild(a)
+        },
         mouseDown(e) {
             e.preventDefault();
             this.drag = true;

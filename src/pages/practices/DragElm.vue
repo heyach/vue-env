@@ -11,6 +11,7 @@
                     v-bind:is="item.name"
                     :key="index"
                     :styles="item.styles"
+                    @stopCreate="stopCreate"
                 ></component>
             </template>
         </div>
@@ -44,15 +45,23 @@ export default {
                 },
             ],
             comList: [],
+            stopCreateFlag: false,
         };
     },
     methods: {
+      stopCreate(){
+        this.stopCreateFlag = true;
+      },
         dragOver(e) {
             e.preventDefault();
         },
         drop(e) {
             e.preventDefault();
             var data = e.dataTransfer.getData("ID");
+            if(this.stopCreateFlag){
+              this.stopCreateFlag = false;
+              return
+            }
             this.createComponent(data, e);
         },
         dragStart(e) {
