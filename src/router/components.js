@@ -18,6 +18,10 @@ const Export = () => import("@/pages/practices/Export")
 const ThreeDemo = () => import("@/pages/practices/ThreeDemo")
 const ThreeDemo2 = () => import("@/pages/practices/ThreeDemo2")
 const DragElm = () => import("@/pages/practices/DragElm")
+const Keyframes = () => import("@/pages/practices/Keyframes")
+const Echarts = () => import("@/pages/practices/Echarts")
+const DragList = () => import("@/pages/practices/DragList")
+const Bimface = () => import("@/pages/practices/Bimface")
 
 // article
 const Article = () => import("@/pages/article/Article")
@@ -58,5 +62,9 @@ export default {
   ThreeDemo,
   ThreeDemo2,
   Export,
-  DragElm
+  DragElm,
+  Keyframes,
+  Echarts,
+  DragList,
+  Bimface
 }

@@ -13,7 +13,7 @@
     </div>
 </template>
 <script>
-// 作为容器也要接受drop事件，但是父容器上也会触发drop，
+// 作为容器也要接受drop事件，但是父容器上也会触发drop，通过增加参数判断阻止父元素的相关动作
 export default {
     props: {
         styles: {
