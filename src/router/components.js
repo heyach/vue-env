@@ -1,7 +1,7 @@
 const Home = () => import("@/pages/Home")
 const Login = () => import("@/pages/Login")
 const Error404 = () => import("@/pages/404")
-const TodoList = () => import("@/pages/practices/TodoList")
+const TodoList = () => import("@/pages/practices/Todo")
 const StyleClass = () => import("@/pages/practices/StyleClass")
 const VuexAxios = () => import("@/pages/practices/VuexAxios")
 const NumberBox = () => import("@/pages/practices/NumberBox")
