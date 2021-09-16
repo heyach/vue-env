@@ -22,6 +22,7 @@ const Keyframes = () => import("@/pages/practices/Keyframes")
 const Echarts = () => import("@/pages/practices/Echarts")
 const DragList = () => import("@/pages/practices/DragList")
 const Bimface = () => import("@/pages/practices/Bimface")
+const GoodsList = () => import("@/pages/practices/GoodsList")
 
 // article
 const Article = () => import("@/pages/article/Article")
@@ -66,5 +67,6 @@ export default {
   Keyframes,
   Echarts,
   DragList,
-  Bimface
+  Bimface,
+  GoodsList
 }

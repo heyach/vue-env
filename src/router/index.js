@@ -103,6 +103,7 @@ let router = new Router({
         { path: "/echarts", component: Components.Echarts, meta: { title: "echarts" } },
         { path: "/draglist", component: Components.DragList, meta: { title: "draglist" } },
         { path: "/bimface", component: Components.Bimface, meta: { title: "bimface" } },
+        { path: "/goodslist", component: Components.GoodsList, meta: { title: "bimface" } },
         { path: "/login", component: Components.Login, meta: { title: "login" } },
         { path: "/404", component: Components.Error404, meta: { title: "404" } },
         { path: "*", redirect: "/404" }, // 未匹配到的路由地址
