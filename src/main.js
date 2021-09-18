@@ -33,9 +33,6 @@ Vue.use(Element, { size: 'small', zIndex: 3000 });
 import './common.css'
 import './assets/iconfont/iconfont.css'
 
-console.log(2)
-console.log(1)
-
 new Vue({
     el: '#root',
     router,

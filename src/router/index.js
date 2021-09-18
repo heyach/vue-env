@@ -82,6 +82,9 @@ let router = new Router({
                 },
             ],
         },
+
+        // practices
+        { path: "/export", component: Components.MyExport, meta: { title: "export" } },
         { path: "/todolist", component: Components.TodoList, meta: { title: "todolist" } },
         { path: "/styleclass", component: Components.StyleClass, meta: { title: "styleclass" } },
         { path: "/vuexaxios", component: Components.VuexAxios, meta: { title: "vuexaxios" } },
@@ -97,7 +100,6 @@ let router = new Router({
         { path: "/threedemo", component: Components.ThreeDemo, meta: { title: "threedemo" } },
         { path: "/threedemo2", component: Components.ThreeDemo2, meta: { title: "threedemo2" } },
         { path: "/trix", component: Components.Trix, meta: { title: "trix" } },
-        { path: "/export", component: Components.Export, meta: { title: "export" } },
         { path: "/dragelm", component: Components.DragElm, meta: { title: "drag" } },
         { path: "/keyframes", component: Components.Keyframes, meta: { title: "keyframes" } },
         { path: "/echarts", component: Components.Echarts, meta: { title: "echarts" } },
@@ -105,6 +107,7 @@ let router = new Router({
         { path: "/bimface", component: Components.Bimface, meta: { title: "bimface" } },
         { path: "/goodslist", component: Components.GoodsList, meta: { title: "bimface" } },
         { path: "/login", component: Components.Login, meta: { title: "login" } },
+
         { path: "/404", component: Components.Error404, meta: { title: "404" } },
         { path: "*", redirect: "/404" }, // 未匹配到的路由地址
     ],
