@@ -29,7 +29,7 @@ const DragElm = () => import("@/views/practices/drag/DragElm");
 const Echarts = () => import("@/views/practices/echarts/Echarts");
 const DragList = () => import("@/views/practices/drag/DragList");
 const GoodsList = () => import("@/views/practices/goodslist/GoodsList");
-
+const HighCharts = () => import("@/views/practices/highcharts/HighCharts");
 // article
 const Article = () => import("@/views/article/Article");
 const ArticleList = () => import("@/views/article/List");
@@ -83,4 +83,5 @@ export default {
     Echarts,
     DragList,
     GoodsList,
+    HighCharts
 };

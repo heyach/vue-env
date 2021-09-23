@@ -106,6 +106,10 @@ let router = new Router({
         { path: "/draglist", component: Components.DragList, meta: { title: "draglist" } },
         { path: "/bimface", component: Components.Bimface, meta: { title: "bimface" } },
         { path: "/goodslist", component: Components.GoodsList, meta: { title: "bimface" } },
+        { path: "/highcharts", component: Components.HighCharts, meta: { title: "highcharts" } },
+
+
+
         { path: "/login", component: Components.Login, meta: { title: "login" } },
 
         { path: "/404", component: Components.Error404, meta: { title: "404" } },

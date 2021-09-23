@@ -20,7 +20,9 @@
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1",
     "echarts": "^4.8.0",
-    "wangeditor": "^4.6.0"
+    "wangeditor": "^4.6.0",
+    "highcharts": "^6.1.0",
+    "highcharts-vue": "^1.0.3"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

@@ -120,6 +120,12 @@ const m = [
                 route: "/dragelm",
                 disabled: false,
             },
+            {
+                index: "27",
+                name: "highcharts",
+                route: "/highcharts",
+                disabled: false,
+            },
         ],
     },
     {
