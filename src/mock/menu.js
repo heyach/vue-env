@@ -126,6 +126,12 @@ const m = [
                 route: "/highcharts",
                 disabled: false,
             },
+            {
+                index: "28",
+                name: "formvalidate",
+                route: "/formvalidate",
+                disabled: false,
+            },
         ],
     },
     {

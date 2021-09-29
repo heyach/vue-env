@@ -97,6 +97,7 @@ let router = new Router({
         { path: "/bubblesort", component: Components.BubbleSort, meta: { title: "bubblesort" } },
         { path: "/quicksort", component: Components.QuickSort, meta: { title: "quicksort" } },
         { path: "/iviewpractice", component: Components.IviewPractice, meta: { title: "iview" } },
+        { path: "/formvalidate", component: Components.FormValidate, meta: { title: "formvalidate" } },
         { path: "/threedemo", component: Components.ThreeDemo, meta: { title: "threedemo" } },
         { path: "/threedemo2", component: Components.ThreeDemo2, meta: { title: "threedemo2" } },
         { path: "/trix", component: Components.Trix, meta: { title: "trix" } },

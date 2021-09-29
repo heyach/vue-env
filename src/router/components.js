@@ -25,6 +25,7 @@ const NumberBox = () => import("@/views/practices/numberbox/NumberBox");
 const ElementUi = () => import("@/views/practices/elementui/ElementUi");
 const ClearFloat = () => import("@/views/practices/clearfloat/ClearFloat");
 const IviewPractice = () => import("@/views/practices/iview/IviewPractice");
+const FormValidate = () => import("@/views/practices/iview/FormValidate");
 const DragElm = () => import("@/views/practices/drag/DragElm");
 const Echarts = () => import("@/views/practices/echarts/Echarts");
 const DragList = () => import("@/views/practices/drag/DragList");
@@ -79,6 +80,7 @@ export default {
     NumberBox,
     ClearFloat,
     IviewPractice,
+    FormValidate,
     DragElm,
     Echarts,
     DragList,
