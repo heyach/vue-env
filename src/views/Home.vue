@@ -56,6 +56,8 @@ export default {
         return {
             msg: "1234567890",
             menuList: m,
+            firstName: "aaa",
+            lastName: "bbb"
         };
     },
     computed: {
@@ -63,6 +65,18 @@ export default {
             totalCount: (state) => state.Home.totalCount,
         }),
         ...mapGetters("Home", ["getTenCount"]),
+        fullName: {
+            get() {
+                return this.firstName + this.lastName
+            },
+            set(v) {
+                // 如果一个人的全名被改成v了，那么就要根据v值去重设firstName和lastName，这就是set的意义
+                console.log(v, 222)
+                this.firstName = v.slice(0,2)
+                this.lastName = v.slice(3,5)
+                return v
+            }
+        }
     },
     created() {},
     mounted() {
@@ -84,7 +98,9 @@ export default {
                 });
         },
         fa() {
-            console.log(1);
+            console.log(this.fullName);
+            this.fullName = "bbbaaa"
+            console.log(this.fullName,333)
         },
         son() {},
     },

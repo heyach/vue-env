@@ -132,6 +132,12 @@ const m = [
                 route: "/formvalidate",
                 disabled: false,
             },
+            {
+                index: "29",
+                name: "echarts",
+                route: "/echarts",
+                disabled: false,
+            },
         ],
     },
     {

@@ -109,7 +109,8 @@ let router = new Router({
         { path: "/goodslist", component: Components.GoodsList, meta: { title: "bimface" } },
         { path: "/highcharts", component: Components.HighCharts, meta: { title: "highcharts" } },
 
-
+        // LearnThree
+        { path: "/learnthree01", component: Components.LearnThree01, meta: { title: "learnthree" } },
 
         { path: "/login", component: Components.Login, meta: { title: "login" } },
 

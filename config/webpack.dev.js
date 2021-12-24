@@ -22,7 +22,14 @@ module.exports = merge(webpackConfig, {
         target: 'http://127.0.0.1:5000',
         changOrigin: true,
         pathRewrite: { '^/api': '' }
-      }
+      },
+      '/': {
+          target: 'http://192.168.2.137',
+          changeOrigin: false,
+          pathRewrite: {
+              '^/': ''
+          }
+      },
     }
   },
   plugins: [

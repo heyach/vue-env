@@ -37,6 +37,9 @@ const ArticleList = () => import("@/views/article/List");
 const ReleaseArticle = () => import("@/views/article/Release");
 const ArticleDetail = () => import("@/views/article/Detail");
 
+// LearnThree
+const LearnThree01 = () => import("@/views/practices/three/LearnThree01");
+
 // user
 const User = () => import("@/views/user/User");
 const MyArticle = () => import("@/views/user/MyArticle");
@@ -58,6 +61,9 @@ export default {
     ArticleList,
     ReleaseArticle,
     ArticleDetail,
+
+    // LearnThree
+    LearnThree01,
 
     // algorithm
     Shuffle,
