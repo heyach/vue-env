@@ -16,6 +16,7 @@ const ThreeDemo = () => import("@/views/practices/three/ThreeDemo");
 const ThreeDemo2 = () => import("@/views/practices/three/ThreeDemo2");
 const Slot = () => import("@/views/practices/slot/Slot");
 const VuexAxios = () => import("@/views/practices/axios/VuexAxios");
+const CancelRequest = () => import("@/views/practices/axios/cancelRequest");
 const Keyframes = () => import("@/views/practices/keyframes/Keyframes");
 const Trix = () => import("@/views/practices/trix/Trix");
 const Bimface = () => import("@/views/practices/bimface/Bimface");
@@ -31,6 +32,8 @@ const Echarts = () => import("@/views/practices/echarts/Echarts");
 const DragList = () => import("@/views/practices/drag/DragList");
 const GoodsList = () => import("@/views/practices/goodslist/GoodsList");
 const HighCharts = () => import("@/views/practices/highcharts/HighCharts");
+const Demo = () => import("@/views/practices/demo/demo");
+
 // article
 const Article = () => import("@/views/article/Article");
 const ArticleList = () => import("@/views/article/List");
@@ -77,6 +80,7 @@ export default {
     ThreeDemo2,
     Slot,
     VuexAxios,
+    CancelRequest,
     Keyframes,
     Trix,
     Bimface,
@@ -91,5 +95,6 @@ export default {
     Echarts,
     DragList,
     GoodsList,
-    HighCharts
+    HighCharts,
+    Demo
 };

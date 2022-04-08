@@ -88,6 +88,7 @@ let router = new Router({
         { path: "/todolist", component: Components.TodoList, meta: { title: "todolist" } },
         { path: "/styleclass", component: Components.StyleClass, meta: { title: "styleclass" } },
         { path: "/vuexaxios", component: Components.VuexAxios, meta: { title: "vuexaxios" } },
+        { path: "/cancelrequest", component: Components.CancelRequest, meta: { title: "cancelrequest" } },
         { path: "/slot", component: Components.Slot, meta: { title: "slot" } },
         { path: "/numberbox", component: Components.NumberBox, meta: { title: "numberbox" } },
         { path: "/elementui", component: Components.ElementUi, meta: { title: "element-ui" } },
@@ -108,6 +109,7 @@ let router = new Router({
         { path: "/bimface", component: Components.Bimface, meta: { title: "bimface" } },
         { path: "/goodslist", component: Components.GoodsList, meta: { title: "bimface" } },
         { path: "/highcharts", component: Components.HighCharts, meta: { title: "highcharts" } },
+        { path: "/demo", component: Components.Demo, meta: { title: "demo" } },
 
         // LearnThree
         { path: "/learnthree01", component: Components.LearnThree01, meta: { title: "learnthree" } },
