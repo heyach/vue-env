@@ -33,6 +33,7 @@ const DragList = () => import("@/views/practices/drag/DragList");
 const GoodsList = () => import("@/views/practices/goodslist/GoodsList");
 const HighCharts = () => import("@/views/practices/highcharts/HighCharts");
 const Demo = () => import("@/views/practices/demo/demo");
+const Markdown = () => import("@/views/practices/markdown/Markdown");
 
 // article
 const Article = () => import("@/views/article/Article");
@@ -96,5 +97,6 @@ export default {
     DragList,
     GoodsList,
     HighCharts,
+    Markdown,
     Demo
 };

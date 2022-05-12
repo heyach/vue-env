@@ -109,6 +109,7 @@ let router = new Router({
         { path: "/bimface", component: Components.Bimface, meta: { title: "bimface" } },
         { path: "/goodslist", component: Components.GoodsList, meta: { title: "bimface" } },
         { path: "/highcharts", component: Components.HighCharts, meta: { title: "highcharts" } },
+        { path: "/markdown", component: Components.Markdown, meta: { title: "markdown" } },
         { path: "/demo", component: Components.Demo, meta: { title: "demo" } },
 
         // LearnThree
